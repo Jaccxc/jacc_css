@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Exercise</title>
+    <title>Exercise Week 3</title>
     <style>
         /* background-color name */
         body {
@@ -16,8 +16,6 @@
         background-color: #f2f2f2;}
 
         /* rgb value */
-        p {
-        background-color: #d0f5f1;}
 
         p.yello {
         background-color: #f0f5d0;}
@@ -27,99 +25,68 @@
     </style>
 </head>
 <body>
-    <div id="image">
-    <img
-	src="images/1.png"
-	alt="A part of the codes."
-	title="A part of the codes from my VecDraw project."
-    />
-    <h1> This is a part of the codes from one of my coolest project "VecDraw".</h1>
-    </div>
+    <a href="https://jaccxc.github.io/jacc_css/example3">Click here to see VecDraw</a>
+    <hr />
+    <h1>Wordblitz Bot is a bot that can play a game called "Word Blitz" fully automaticlly.</h1>
+    <video src="video/2.mp4"
+    height="566"
+    preload
+    controls
+    loop>
+    <p>Demo video</p>
+    </video>
+    <p>Demo video</p>
+    <hr />
+    <h3>0.Introduce Word Blitz</h3>
+    <p>
+        <b>Word Blitz</b> is a game from Facebook Messenger. Everyone could play it on your phone or computer as long as you have a Facebook account.
+        The game is simple. Given a 4x4 list of characters, connect characters that can make a word. Find as many word combinations as possible in 2 minutes.
+    </p>
+    <hr />
+
+    <h3>1.Image detection</h3>
+    <p>
+        In order to make the bot play, we have first input the character list. So the program could start to find conbinations.<br>
+        At first, I have to manually input that 16 characters. But that is really tiring. So I decide to make the program collect the input automaticlly.<br><br>
+        I wrote the code in Python3. That way I can use OCR modules easily.<br>
+        <img
+            src="images/4244.png"
+            alt=""
+            title=""
+        />
+    </p>
+
+    <h3>2.Pathfiding Algorithm</h3>
+    <p>
+        I used recursion in the code. Create all the possible combinations of characters. Then check if the conbination is in the dictionary.<br>
+        This is a bad way to find the answer. But is fast enough to check all the possible answer in 2 minutes.<br>
+        <img
+            src="images/3566.png"
+            alt=""
+            title=""
+        />
+        <br>This is the end of the dictionaty, there are 170000+ possible words.
+    </p>
+
+    <h3>3.Auto Mouse Input</h3>
+    <p>
+        This module "PyMouse" in Python can move your mouse and simulate click actions.<br>
+        Sadly, we are simulating mouse actions to send input to the browser. This is way slower then just sending info by packets.
+        <br>But there's no such api exists. So I had to do this.
+        <br>
+        <img
+            src="images/35662.png"
+            alt=""
+            title=""
+        />
+    </p>
+    <hr />
+    <p>And that's how the bot was made!</p>
 
 
-    <img
-    	src="images/2.png"
-    	alt="My donut"
-    	title="This is a donut that modeled and rendered by myself."
-    	width="1006" height="566"
-    />
 
 
-    <h2> And this is a donut that modeled and rendered by myself. </h2>
-    <h2> This is another cool project, too. I was learning 3D modeling with a software called "Blender".</h2>
-    <h3><span class="gallery">What project "VecDraw" could do, </span></h3>
-    <p>is to transform a vector image into equations of Bezier curves.</p>
-    <figure>
-            <img src="https://jaccxc.github.io/jacc_css/images/3.jpg"
-                alt="VecDraw"
-                title="It draws the vector image on coordinates"
-                width="1006" height="566"
-                align="left"
-		        alt="It draws the vector image on coordinates"
-            />
-	        <br />
-	<figcaption>Bezier curves can be draw on a coordinate plane. So I made my program calculated the function it needed to draw the donut I modeled.
-	</figcaption>
-</figure>
 
-<!--This is the part where I show how the VecDraw was made.-->
-<div>
-<table border="1">
-	<thead>
-		<tr>
-			<th></th>
-			<th>Functions</th>
-			<th>Lines</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th><i>Section 1:</i></th>
-			<td> Bezier curves in X </td>
-			<td>15</td>
-		</tr>
-		<tr>
-			<th><i>Section 2:</i></th>
-            <td> Bezier curves in Y </td>
-			<td>14</td>
-		</tr>
-		<tr>
-			<th><i>Section 3:</i></th>
-			<td> Read SVG file </td>
-            <td rowspan="2">108</td>
-		</tr>
-        <tr>
-            <th><i>Section 4:</i></th>
-            <td> Parsing SVG instructions </td>
-        </tr>
-        <tr>
-            <th><i>Section 5:</i></th>
-            <td> Calculate result function </td>
-            <td rowspan="2">169</td>
-        </tr>
-        <tr>
-            <th><i>Section 6:</i></th>
-            <td> Output in .txt </td>
-        </tr>
-	</tbody>
-	<tfoot>
-		<tr>
-			<th>Total lines of codes:</th>
-			<td></td>
-			<td>318</td>
-		</tr>
-	</tfoot>
-</table>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<video src="video/1.mp4"
-height="566"
-preload
-controls
-loop>
-<p>Demo video</p>
-</video>
-<p class="yello">Demo video</p>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </body>
 </html>

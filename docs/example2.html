@@ -1,96 +1,127 @@
 <html>
 <head>
-    <title>Exercise Week 3</title>
+    <title>Exercise</title>
+    <style>
+        /* background-color name */
+        body {
+        background-color: rgb(189, 189, 189);}
+        /* hex code */
+        h1 {
+        background-color: rgb(227, 227, 227);}
+
+        h2 {
+        background-color: #d1d1d1;}
+
+        h3 {
+        background-color: #f2f2f2;}
+
+        /* rgb value */
+        p {
+        background-color: #d0f5f1;}
+
+        p.yello {
+        background-color: #f0f5d0;}
+
+        div > table {
+        background-color: #f5d0e6;}
+    </style>
 </head>
 <body>
-    <a href="https://jaccxc.github.io/jacc_css">Home</a>
-    <h1>This is exercise from week 3</h1>
+    <a href="https://jaccxc.github.io/jacc_css/example2">Click here to see Wordblitz Bot</a>
     <hr />
-
-    <h1>This is a Main Heading</h1>
-    <h2>This is a Level 2 sub-heading</h2>
-    <h3>This is a Level 3 sub-heading</h3>
-    <h4>This is a Level 4 sub-heading</h4>
-    <h5>This is a Level 5 sub-heading</h5>
-    <h6>This is a Level 6 sub-heading</h6>
-    <hr />
-
-    <p>
-        By default, a browser will show each paragra
-        ph on a new line with some space between it and any subsequent paragraphs
-    </p>
-    <p>
-        Using br / tag, you can <br />
-        break <br />
-        line
-    </p>
-    <p><b>Bold texts show here </b>And <i>Italic texts are here </i></p>
-    <hr />
-
-    <p> I <sup>can</sup> <sub>control</sub> text <sup>however</sup> I<sub>want it</sub></p>
-    <hr />
-
-    <p> These two paragraphs <p>
-        <hr />
-    <p> Are separated by horizontal line<p>
-        <hr />
-
-    <p> Richard Feynman: < blockquote cite= “https://en.wikiquote.org/wiki/Richard_Feynman”> What I cannot create, I do not understand. </ blockquote > </p>
-    <p> Richard Feynman: <q> What I cannot create, I do not understand. </q> </p>
-    <p><abbr title=“National Taipei University">NTPU</abbr> is located in New Taipei, Sanxia.</p>
-    <p><cite>A Brief History of Time</cite> by Stephen Hawking has sold over ten million copies worldwide.</p>
-    <p>A <dfn>black hole</dfn> is a region of space from which nothing, not even light, can escape.</p>
-    <address>
-        <p>
-            <a href="s06263971@hotmai.com">
-                s06263971@hotmai.com
-            </a>
-        </p>
-        <p>Zhudong Township, Hsinchu County 310, Taiwan (R.O.C.).</p>
-    </address>
+    <div id="image">
+    <img
+	src="images/1.png"
+	alt="A part of the codes."
+	title="A part of the codes from my VecDraw project."
+    />
+    <h1> This is a part of the codes from one of my coolest project "VecDraw".</h1>
+    </div>
 
 
-
-    <ol>
-        <li>Chop potatoes into quarters</li>
-        <li>
-            Simmer in salted water for 15-20
-            minutes until tender
-        </li>
-        <li>Heat milk, butter and nutmeg</li>
-        <li>Drain potatoes and mash</li>
-        <li>Mix in the milk mixture</li>
-    </ol>
-
-    <ul>
-        <li>Chop potatoes into quarters</li>
-        <li>
-            Simmer in salted water for 15-20
-            minutes until tender
-        </li>
-        <li>Heat milk, butter and nutmeg</li>
-        <li>Drain potatoes and mash</li>
-        <li>Mix in the milk mixture</li>
-    </ul>
+    <img
+    	src="images/2.png"
+    	alt="My donut"
+    	title="This is a donut that modeled and rendered by myself."
+    	width="1006" height="566"
+    />
 
 
-    <dl>
-        <dd>Addition (+)</dd>
-        <dt>Bringing two or more numbers (or things) together to make a new total</dt>
-        <dd>Subtraction (-)</dd>
-        <dt>Taking one number away from another.</dt>
-    </dl>
+    <h2> And this is a donut that modeled and rendered by myself. </h2>
+    <h2> This is another cool project, too. I was learning 3D modeling with a software called "Blender".</h2>
+    <h3><span class="gallery">What project "VecDraw" could do, </span></h3>
+    <p>is to transform a vector image into equations of Bezier curves.</p>
+    <figure>
+            <img src="https://jaccxc.github.io/jacc_css/images/3.jpg"
+                alt="VecDraw"
+                title="It draws the vector image on coordinates"
+                width="1006" height="566"
+                align="left"
+		        alt="It draws the vector image on coordinates"
+            />
+	        <br />
+	<figcaption>Bezier curves can be draw on a coordinate plane. So I made my program calculated the function it needed to draw the donut I modeled.
+	</figcaption>
+</figure>
 
-
-    <ul>
-        <li>list item #1</li>
-        <li>list item #2:</li>
-        <ul>
-            <li>sub-list item#1</li>
-            <li>sub-list item #2</li>
-        </ul>
-    </ul>
-
-
+<!--This is the part where I show how the VecDraw was made.-->
+<div>
+<table border="1">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Functions</th>
+			<th>Lines</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th><i>Section 1:</i></th>
+			<td> Bezier curves in X </td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<th><i>Section 2:</i></th>
+            <td> Bezier curves in Y </td>
+			<td>14</td>
+		</tr>
+		<tr>
+			<th><i>Section 3:</i></th>
+			<td> Read SVG file </td>
+            <td rowspan="2">108</td>
+		</tr>
+        <tr>
+            <th><i>Section 4:</i></th>
+            <td> Parsing SVG instructions </td>
+        </tr>
+        <tr>
+            <th><i>Section 5:</i></th>
+            <td> Calculate result function </td>
+            <td rowspan="2">169</td>
+        </tr>
+        <tr>
+            <th><i>Section 6:</i></th>
+            <td> Output in .txt </td>
+        </tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th>Total lines of codes:</th>
+			<td></td>
+			<td>318</td>
+		</tr>
+	</tfoot>
+</table>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<video src="video/1.mp4"
+height="566"
+preload
+controls
+loop>
+<p>Demo video</p>
+</video>
+<p class="yello">Demo video</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
