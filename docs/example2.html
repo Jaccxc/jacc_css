@@ -2,126 +2,162 @@
 <head>
     <title>Exercise</title>
     <style>
-        /* background-color name */
-        body {
-        background-color: rgb(189, 189, 189);}
-        /* hex code */
-        h1 {
-        background-color: rgb(227, 227, 227);}
 
-        h2 {
-        background-color: #d1d1d1;}
+
+        .container {
+            height: 200px;
+            position: relative;
+            border: 3px solid green;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
 
         h3 {
-        background-color: #f2f2f2;}
+            font-family: arial;
+            width: 800px;
+            line-height: 1em;
+            padding-left: 200px;
+            color: #404040;
+            font-size: 40px;
+        }
 
-        /* rgb value */
+        h1 {
+            font-family: arial;
+            width: 800px;
+            line-height: 1em;
+            padding-left: 200px;
+            font-size: 45px;
+            color: #404040;
+        }
+
+        h4 {
+            font-family: arial;
+            width: 800px;
+            line-height: 0.4em;
+            padding-left: 0px;
+            color: #404040;
+            font-size: 20px;
+        }
+
         p {
-        background-color: #d0f5f1;}
+            font-family: arial;
+            width: 800px;
+            line-height: 1.5em;
+            padding-left: 200px;
+            color: #404040;
+            font-size: 20px;
+        }
 
-        p.yello {
-        background-color: #f0f5d0;}
 
         div > table {
-        background-color: #f5d0e6;}
+            background-color: #ffffff;
+            font-family: arial;
+        }
     </style>
 </head>
 <body>
     <a href="https://jaccxc.github.io/jacc_css/example3">Click here to see Wordblitz Bot</a>
     <hr />
-    <div id="image">
-    <img
-	src="images/1.png"
-	alt="A part of the codes."
-	title="A part of the codes from my VecDraw project."
-    />
-    <h1> This is a part of the codes from one of my coolest project "VecDraw".</h1>
-    </div>
+    <h1>Vector Drawer</h1>
+    <center>
+        <img src="https://jaccxc.github.io/jacc_css/images/1.png"
+             alt="A part of the codes."
+             title="A part of the codes from my VecDraw project." />
+        <h4> This is part of the code from the project where it calculates the cubic equation.</h4>
+    </center>
+
+    <center>
+        <img src="https://jaccxc.github.io/jacc_css/images/2.png"
+             alt="My donut"
+             title="This is a donut that modeled and rendered by myself."
+             width="1006" height="566" />
+        <h4> And this is a donut that modeled and rendered by myself. </h4>
+        <h4> This is a donut I made with "Blender", a 3D modeling software.</h4>
+    </center>
 
 
-    <img
-    	src="images/2.png"
-    	alt="My donut"
-    	title="This is a donut that modeled and rendered by myself."
-    	width="1006" height="566"
-    />
+    <h3><span class="gallery">What project "VecDraw" could do? </span></h3>
+    <p>VecDraw is a tool to transform a vector image into equations of Bezier curves.</p>
+
+    <center>
+        <img src="https://jaccxc.github.io/jacc_css/images/3.jpg"
+             alt="VecDraw"
+             title="It draws the vector image on coordinates"
+             width="1006" height="566"
+             alt="It draws the vector image on coordinates" />
+        <br />
+    </center>
+    <p>Bezier curves can be draw on a coordinate plane. So I made my program calculated the function it needed to draw the donut I modeled.</p>
 
 
-    <h2> And this is a donut that modeled and rendered by myself. </h2>
-    <h2> This is another cool project, too. I was learning 3D modeling with a software called "Blender".</h2>
-    <h3><span class="gallery">What project "VecDraw" could do, </span></h3>
-    <p>is to transform a vector image into equations of Bezier curves.</p>
-    <figure>
-            <img src="https://jaccxc.github.io/jacc_css/images/3.jpg"
-                alt="VecDraw"
-                title="It draws the vector image on coordinates"
-                width="1006" height="566"
-                align="left"
-		        alt="It draws the vector image on coordinates"
-            />
-	        <br />
-	<figcaption>Bezier curves can be draw on a coordinate plane. So I made my program calculated the function it needed to draw the donut I modeled.
-	</figcaption>
-</figure>
-
-<!--This is the part where I show how the VecDraw was made.-->
-<div>
-<table border="1">
-	<thead>
-		<tr>
-			<th></th>
-			<th>Functions</th>
-			<th>Lines</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th><i>Section 1:</i></th>
-			<td> Bezier curves in X </td>
-			<td>15</td>
-		</tr>
-		<tr>
-			<th><i>Section 2:</i></th>
-            <td> Bezier curves in Y </td>
-			<td>14</td>
-		</tr>
-		<tr>
-			<th><i>Section 3:</i></th>
-			<td> Read SVG file </td>
-            <td rowspan="2">108</td>
-		</tr>
-        <tr>
-            <th><i>Section 4:</i></th>
-            <td> Parsing SVG instructions </td>
-        </tr>
-        <tr>
-            <th><i>Section 5:</i></th>
-            <td> Calculate result function </td>
-            <td rowspan="2">169</td>
-        </tr>
-        <tr>
-            <th><i>Section 6:</i></th>
-            <td> Output in .txt </td>
-        </tr>
-	</tbody>
-	<tfoot>
-		<tr>
-			<th>Total lines of codes:</th>
-			<td></td>
-			<td>318</td>
-		</tr>
-	</tfoot>
-</table>
-</div>
-<br><br><br><br><br><br><br><br><br>
-<video src="video/1.mp4"
-height="566"
-preload
-controls
-loop>
-<p>Demo video</p>
-</video>
-<p class="yello">Demo video</p>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!--This is the pa
+    rt where I show how the VecDraw was made.-->
+    <center>
+        <div>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Functions</th>
+                        <th>Lines</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><i>Section 1:</i></th>
+                        <td> Bezier curves in X </td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <th><i>Section 2:</i></th>
+                        <td> Bezier curves in Y </td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <th><i>Section 3:</i></th>
+                        <td> Read SVG file </td>
+                        <td rowspan="2">108</td>
+                    </tr>
+                    <tr>
+                        <th><i>Section 4:</i></th>
+                        <td> Parsing SVG instructions </td>
+                    </tr>
+                    <tr>
+                        <th><i>Section 5:</i></th>
+                        <td> Calculate result function </td>
+                        <td rowspan="2">169</td>
+                    </tr>
+                    <tr>
+                        <th><i>Section 6:</i></th>
+                        <td> Output in .txt </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total lines of codes:</th>
+                        <td></td>
+                        <td>318</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <br><br>
+        <video src="video/1.mp4"
+               height="566"
+               preload
+               controls
+               loop>
+            <p>Demo video</p>
+        </video>
+        <h4>Demo video</h4>
+     </center>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
