@@ -3,6 +3,10 @@
     <title>Exercise</title>
     <style>
 
+        body {
+           width: 80%;
+           margin: 0 auto;
+        }
 
         .container {
             height: 200px;
@@ -11,153 +15,166 @@
         }
 
         .center {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .centertable {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        #_content {
+        	height: 100%;
+        }
+
+        #col1, #col2, #col3, #col4, #col5  {
+    	float: left;
+    	margin: 10px;
+        }
+
+        #texts  {
+            padding-left: 150px;
         }
 
         h3 {
             font-family: arial;
-            width: 800px;
             line-height: 1em;
-            padding-left: 200px;
             color: #404040;
             font-size: 40px;
         }
 
         h1 {
             font-family: arial;
-            width: 800px;
             line-height: 1em;
-            padding-left: 200px;
             font-size: 45px;
             color: #404040;
         }
 
         h4 {
             font-family: arial;
-            width: 800px;
-            line-height: 0.4em;
-            padding-left: 0px;
+            line-height: 1em;
             color: #404040;
             font-size: 20px;
+            text-align:center;
         }
 
         p {
             font-family: arial;
-            width: 800px;
             line-height: 1.5em;
-            padding-left: 200px;
             color: #404040;
             font-size: 20px;
         }
 
-
-        div > table {
+        #table {
             background-color: #ffffff;
             font-family: arial;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <a href="https://jaccxc.github.io/jacc_css/example3">Click here to see Wordblitz Bot</a>
+    <div id="_header">
+        <a href="https://jaccxc.github.io/jacc_css/example3">Click here to see Wordblitz Bot</a>
+    </div>
     <hr />
-    <h1>Vector Drawer</h1>
-    <center>
+    <div id="_content">
+        <h1>Vector Drawer</h1>
         <img src="https://jaccxc.github.io/jacc_css/images/1.png"
              alt="A part of the codes."
-             title="A part of the codes from my VecDraw project." />
-        <h4> This is part of the code from the project where it calculates the cubic equation.</h4>
-    </center>
-
-    <center>
+             title="A part of the codes from my VecDraw project."
+             class="center"/>
+        <div id="tips">
+            <h4> This is part of the code from the project where it calculates the cubic equation.</h4>
+        </div>
         <img src="https://jaccxc.github.io/jacc_css/images/2.png"
              alt="My donut"
              title="This is a donut that modeled and rendered by myself."
-             width="1006" height="566" />
-        <h4> And this is a donut that modeled and rendered by myself. </h4>
-        <h4> This is a donut I made with "Blender", a 3D modeling software.</h4>
-    </center>
-
-
-    <h3><span class="gallery">What project "VecDraw" could do? </span></h3>
-    <p>VecDraw is a tool to transform a vector image into equations of Bezier curves.</p>
-
-    <center>
+             class="center"/>
+        <div id="tips">
+            <h4> And this is a donut that modeled and rendered by myself. </h4>
+            <h4> This is a donut I made with "Blender", a 3D modeling software.</h4>
+        </div>
+        <h3><span class="gallery">What project "VecDraw" could do? </span></h3>
+        <div id="col1">
+            <p>VecDraw is a tool to transform a vector image into equations of Bezier curves.</p>
+        </div>
         <img src="https://jaccxc.github.io/jacc_css/images/3.jpg"
              alt="VecDraw"
              title="It draws the vector image on coordinates"
-             width="1006" height="566"
-             alt="It draws the vector image on coordinates" />
+             alt="It draws the vector image on coordinates"
+             class="center"/>
         <br />
-    </center>
-    <p>Bezier curves can be draw on a coordinate plane. So I made my program calculated the function it needed to draw the donut I modeled.</p>
-
-
-    <!--This is the pa
-    rt where I show how the VecDraw was made.-->
-    <center>
-        <div>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Functions</th>
-                        <th>Lines</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th><i>Section 1:</i></th>
-                        <td> Bezier curves in X </td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <th><i>Section 2:</i></th>
-                        <td> Bezier curves in Y </td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <th><i>Section 3:</i></th>
-                        <td> Read SVG file </td>
-                        <td rowspan="2">108</td>
-                    </tr>
-                    <tr>
-                        <th><i>Section 4:</i></th>
-                        <td> Parsing SVG instructions </td>
-                    </tr>
-                    <tr>
-                        <th><i>Section 5:</i></th>
-                        <td> Calculate result function </td>
-                        <td rowspan="2">169</td>
-                    </tr>
-                    <tr>
-                        <th><i>Section 6:</i></th>
-                        <td> Output in .txt </td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>Total lines of codes:</th>
-                        <td></td>
-                        <td>318</td>
-                    </tr>
-                </tfoot>
-            </table>
+        <div id="col2">
+        <p>Bezier curves can be draw on a coordinate plane. So I made my program calculated the function it needed to draw the donut I modeled.</p>
         </div>
-        <br><br>
-        <video src="video/1.mp4"
-               height="566"
-               preload
-               controls
-               loop>
-            <p>Demo video</p>
-        </video>
-        <h4>Demo video</h4>
-     </center>
+        <div id="form">
+            <div id="table">
+                <table border="1" class="centertable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Functions</th>
+                            <th>Lines</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><i>Section 1:</i></th>
+                            <td> Bezier curves in X </td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th><i>Section 2:</i></th>
+                            <td> Bezier curves in Y </td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <th><i>Section 3:</i></th>
+                            <td> Read SVG file </td>
+                            <td rowspan="2">108</td>
+                        </tr>
+                        <tr>
+                            <th><i>Section 4:</i></th>
+                            <td> Parsing SVG instructions </td>
+                        </tr>
+                        <tr>
+                            <th><i>Section 5:</i></th>
+                            <td> Calculate result function </td>
+                            <td rowspan="2">169</td>
+                        </tr>
+                        <tr>
+                            <th><i>Section 6:</i></th>
+                            <td> Output in .txt </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Total lines of codes:</th>
+                            <td></td>
+                            <td>318</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <br><br>
+            <video src="video/1.mp4"
+                   preload
+                   controls
+                   loop
+                   class="center">
+                <p>Demo video</p>
+            </video>
+            <h4>Demo video</h4>
+        </div>
+    </div>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
